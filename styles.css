@@ -2,19 +2,19 @@
 
 body {
     background-color: #ccc;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+}
+
+body > * {
+    margin: auto;
 }
 
 .bigcontainer {
     width: 1024px;
     height: 768px;
     display: flex;
-    align-items: stretch;
     align-content: center;
 }
 
