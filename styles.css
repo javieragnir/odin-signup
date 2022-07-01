@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigcontainer {
+    height: min(1080px, 100vh);
+    width: min(1920px, 100vw);
+    display: flex;
+    align-items: stretch;
+    align-content: center;
+}
+
+.bigcontainer > div {
+    width: auto;
+}
+
+.container1 {
+    background-color: blue;
+    flex: 1;
+}
+
+.container2 {
+    background-color: red;
+    flex: 1.5;
+}
