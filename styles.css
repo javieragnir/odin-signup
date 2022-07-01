@@ -86,7 +86,7 @@ body > * {
 }
 
 .section {
-    padding-left: 32px;
+    padding-left: 40px;
     padding-right: 128px;
     box-sizing: border-box;
 }
@@ -100,14 +100,48 @@ body > * {
 .section.one {
     padding-top: 80px;
     font-size: 16px;
+    text-align: justify;
     font-weight: bolder;
 }
 
 .section.two {
     background-color: #fff;
     height: 30%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.section.two h1 {
+    padding: 0px;
+    margin: 0px 0px 16px 0px;
+    font-size: 18px;
 }
 
 .section.three {
-
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.form-element {
+    background-color: red;
+}
+
+.form-grid label {
+    font-size: 10px;
+    color: rgb(72, 72, 72);
+}
+
+.form-grid input {
+    display: block;
+    border: 1px black solid;
+    border-radius: 4px;
+    height: 18px;
+    background-color: rgb(240, 240, 255);
+}
+
