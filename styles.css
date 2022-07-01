@@ -6,6 +6,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .bigcontainer {
@@ -28,7 +30,7 @@ body {
 .logo-container {
     box-sizing: border-box;
 
-    padding: 16px 20px;
+    padding: 16px;
 
     height: 150px;
     width: 100%;
@@ -55,7 +57,25 @@ body {
     flex: 1;
 
     position: relative;
-    right: 8px;
+    right: 12px;
+}
+
+.credits {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    width: auto;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 12px;
+}
+
+.credits a:visited, a:hover, a:active {
+    color: inherit;
 }
 
 
