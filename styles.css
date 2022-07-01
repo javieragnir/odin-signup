@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 body {
-    background-color:rgb(178, 177, 177)
+    background-color: #ccc;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,16 +16,27 @@ body {
     align-content: center;
 }
 
-.bigcontainer > div {
-    width: auto;
-}
-
 .container1 {
-    background-color: blue;
+    background-image: url("cat.jpg");
+    background-size: cover;
     flex: 1;
 }
 
 .container2 {
-    background-color: red;
     flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
+
+.section.one,
+.section.three {
+    background-color: #eee;
+    flex: 1.2;
+}
+
+.section.two {
+    background-color: #fff;
+    flex: 1;
+}
+
