@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 body {
+    background-color:rgb(178, 177, 177)
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .bigcontainer {
-    height: min(1080px, 100vh);
-    width: min(1920px, 100vw);
+    width: 1024px;
+    height: 768px;
     display: flex;
     align-items: stretch;
     align-content: center;
