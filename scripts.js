@@ -5,6 +5,7 @@ const submit = document.querySelector('#submit');
 const passFields = [password, confirm];
 
 passFields.forEach(item => item.addEventListener('focusout', checkMatch));
+passFields.forEach(item => item.addEventListener('keyup', checkValid));
 
 submit.addEventListener('click', stopSubmit);
 
@@ -21,5 +22,13 @@ function checkMatch() {
 function stopSubmit(event) {
     if (password.classList.contains('invalid') || confirm.classList.contains('invalid')){
         event.preventDefault();
+    }
+}
+
+function checkValid() {
+    if (password.classList.contains('invalid') || confirm.classList.contains('invalid')) {
+        if (password.value === confirm.value) {
+            passFields.forEach(item => item.classList.remove('invalid'));
+        }
     }
 }
